@@ -59,7 +59,8 @@ A modern, feature-rich React Native beauty e-commerce application with stunning 
 <div align="center">
 
 ### 🎨 **Onboarding & Authentication**
-![Onboarding](https://via.placeholder.com/300x600/FF6B9D/FFFFFF?text=Welcome+to+GlowCart)
+![Onboarding](<img width="460" height="973" alt="Screenshot 2025-08-13 000326" src="https://github.com/user-attachments/assets/43585433-39d5-4802-a52e-9f048c2c3a9e" />)
+
 ![Login](https://via.placeholder.com/300x600/61DAFB/FFFFFF?text=Login+Screen)
 ![Register](https://via.placeholder.com/300x600/FF6B9D/FFFFFF?text=Register+Screen)
 
