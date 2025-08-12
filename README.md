@@ -1,97 +1,230 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# GlowCart - Beauty E-commerce App
 
-# Getting Started
+A complete React Native CLI beauty e-commerce application with modern UI/UX design and full functionality.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+## 🚀 Features
 
-## Step 1: Start Metro
+### Core Features
+- **User Authentication**: Login/Register with email and password
+- **Product Browsing**: Browse beauty products with search and filtering
+- **Product Details**: Detailed product information with images and descriptions
+- **Shopping Cart**: Add products to cart with quantity management
+- **User Profile**: Manage account settings and preferences
+- **Responsive Design**: Beautiful UI that works on all screen sizes
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+### Technical Features
+- **React Navigation**: Smooth screen transitions and tab navigation
+- **Context API**: State management for authentication and cart
+- **Axios**: API integration with dummyjson.com
+- **TypeScript**: Full type safety and better development experience
+- **Modular Architecture**: Reusable components and clean code structure
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+## 📱 Screenshots
 
-```sh
-# Using npm
-npm start
+### Onboarding Screen
+- Welcome screen with app branding
+- "Your Beauty, Delivered" tagline
+- Get Started button
 
-# OR using Yarn
-yarn start
+### Authentication Screens
+- **Login Screen**: Email/password fields with social login options
+- **Register Screen**: Full name, email, password, and confirm password
+
+### Main App Screens
+- **Home Screen**: Product grid with search and filter functionality
+- **Product Details**: Large product images, descriptions, and add to cart
+- **Profile Screen**: User information and settings menu
+
+## 🛠️ Tech Stack
+
+- **React Native CLI** (0.80.2)
+- **TypeScript**
+- **React Navigation v6**
+- **Axios** for API calls
+- **Context API** for state management
+- **StyleSheet API** for styling
+
+## 📦 Installation
+
+### Prerequisites
+- Node.js (v16 or higher)
+- React Native CLI
+- Android Studio (for Android development)
+- Xcode (for iOS development, macOS only)
+
+### Setup Instructions
+
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd GlowCart
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Install iOS dependencies** (macOS only)
+   ```bash
+   cd ios && pod install && cd ..
+   ```
+
+4. **Run the application**
+
+   **For Android:**
+   ```bash
+   npx react-native run-android
+   ```
+
+   **For iOS:**
+   ```bash
+   npx react-native run-ios
+   ```
+
+## 🏗️ Project Structure
+
+```
+src/
+├── components/          # Reusable UI components
+│   ├── Button.tsx
+│   ├── Header.tsx
+│   ├── ProductCard.tsx
+│   └── SearchBar.tsx
+├── context/            # State management
+│   ├── AuthContext.tsx
+│   └── CartContext.tsx
+├── navigation/         # Navigation configuration
+│   └── AppNavigator.tsx
+├── screens/           # App screens
+│   ├── HomeScreen.tsx
+│   ├── LoginScreen.tsx
+│   ├── OnboardingScreen.tsx
+│   ├── ProductDetailsScreen.tsx
+│   ├── ProfileScreen.tsx
+│   └── RegisterScreen.tsx
+├── utils/             # Utility functions
+│   └── api.ts
+└── assets/            # Images, fonts, etc.
 ```
 
-## Step 2: Build and run your app
+## 🔧 Configuration
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+### API Configuration
+The app uses the [DummyJSON API](https://dummyjson.com/products) for product data. The API utility automatically filters products to show only beauty/cosmetic related items.
 
-### Android
+### Environment Setup
+No additional environment variables are required for basic functionality.
 
-```sh
-# Using npm
-npm run android
+## 🎨 Design System
 
-# OR using Yarn
-yarn android
-```
+### Colors
+- **Primary**: #FF6B9D (Pink)
+- **Secondary**: #F8F9FA (Light Gray)
+- **Text Primary**: #333333 (Dark Gray)
+- **Text Secondary**: #666666 (Medium Gray)
+- **Background**: #FFFFFF (White)
 
-### iOS
+### Typography
+- **Headings**: Bold, 24-32px
+- **Body Text**: Regular, 14-16px
+- **Captions**: Regular, 12-14px
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+## 🚀 Getting Started
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+1. **Start the Metro bundler**
+   ```bash
+   npx react-native start
+   ```
 
-```sh
-bundle install
-```
+2. **Run on Android**
+   ```bash
+   npx react-native run-android
+   ```
 
-Then, and every time you update your native dependencies, run:
+3. **Run on iOS** (macOS only)
+   ```bash
+   npx react-native run-ios
+   ```
 
-```sh
-bundle exec pod install
-```
+## 📋 Available Scripts
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+- `npm start` - Start Metro bundler
+- `npm run android` - Run on Android
+- `npm run ios` - Run on iOS
+- `npm test` - Run tests
+- `npm run lint` - Run ESLint
 
-```sh
-# Using npm
-npm run ios
+## 🔍 API Integration
 
-# OR using Yarn
-yarn ios
-```
+The app integrates with the DummyJSON API to fetch product data. The API utility includes:
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+- **Product Filtering**: Automatically filters beauty/cosmetic products
+- **Search Functionality**: Search products by title, brand, or category
+- **Error Handling**: Graceful error handling with fallback options
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+### API Endpoints Used
+- `GET /products` - Fetch all products
+- `GET /products/{id}` - Fetch specific product
+- `GET /products/search?q={query}` - Search products
 
-## Step 3: Modify your app
+## 🛒 Shopping Cart Features
 
-Now that you have successfully run the app, let's make changes!
+- Add/remove products
+- Quantity management
+- Price calculations with discounts
+- Cart persistence (in-memory)
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+## 🔐 Authentication
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+- Email/password authentication
+- User session management
+- Protected routes
+- Logout functionality
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+## 📱 Navigation Flow
 
-## Congratulations! :tada:
+1. **Onboarding** → Welcome screen
+2. **Login/Register** → Authentication
+3. **Main Tabs** → Home and Profile
+4. **Product Details** → Individual product view
 
-You've successfully run and modified your React Native App. :partying_face:
+## 🐛 Known Issues
 
-### Now what?
+- Social login buttons are UI-only (functionality not implemented)
+- Filter functionality shows "Coming Soon" message
+- Cart screen navigation not implemented
+- Some profile menu items show "Coming Soon" message
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+## 🔮 Future Enhancements
 
-# Troubleshooting
+- [ ] Implement social login (Google, Apple, Facebook)
+- [ ] Add advanced filtering and sorting
+- [ ] Implement cart screen with checkout
+- [ ] Add wishlist functionality
+- [ ] Implement push notifications
+- [ ] Add dark mode support
+- [ ] Implement real payment gateway
+- [ ] Add product reviews and ratings
+- [ ] Implement address management
+- [ ] Add order tracking
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+## 🤝 Contributing
 
-# Learn More
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests if applicable
+5. Submit a pull request
 
-To learn more about React Native, take a look at the following resources:
+## 📄 License
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+This project is licensed under the MIT License.
+
+## 👨‍💻 Developer
+
+Built with ❤️ using React Native
+
+---
+
+**Note**: This is a demo application for educational purposes. The authentication is mock-based and products are fetched from a public API.
