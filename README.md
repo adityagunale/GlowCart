@@ -59,19 +59,27 @@ A modern, feature-rich React Native beauty e-commerce application with stunning 
 <div align="center">
 
 ### 🎨 **Onboarding & Authentication**
-![Onboarding](<img width="460" height="973" alt="Screenshot 2025-08-13 000326" src="https://github.com/user-attachments/assets/43585433-39d5-4802-a52e-9f048c2c3a9e" />)
 
-![Login](https://via.placeholder.com/300x600/61DAFB/FFFFFF?text=Login+Screen)
-![Register](https://via.placeholder.com/300x600/FF6B9D/FFFFFF?text=Register+Screen)
+<img width="460" height="973" alt="Screenshot 2025-08-13 000326" src="https://github.com/user-attachments/assets/43585433-39d5-4802-a52e-9f048c2c3a9e" />
+
+<img width="460" height="973" alt="Screenshot 2025-08-13 000333" src="https://github.com/user-attachments/assets/b38183e3-f8e4-49fd-a864-30c2321644cf" />
+
+<img width="460" height="973" alt="Screenshot 2025-08-13 000342" src="https://github.com/user-attachments/assets/d36cd723-7580-42e3-b871-724f45a8e60b" />
+
 
 ### 🏠 **Main App Experience**
-![Home](https://via.placeholder.com/300x600/61DAFB/FFFFFF?text=Home+Screen)
-![Products](https://via.placeholder.com/300x600/FF6B9D/FFFFFF?text=Product+Grid)
-![Details](https://via.placeholder.com/300x600/61DAFB/FFFFFF?text=Product+Details)
+
+<img width="460" height="973" alt="Screenshot 2025-08-13 000437" src="https://github.com/user-attachments/assets/3d30ea51-9340-4ce8-b6cd-bbb78c5f1d8e" />
+
+<img width="460" height="973" alt="Screenshot 2025-08-13 000523" src="https://github.com/user-attachments/assets/0b582419-b933-4655-a949-27fbc1086554" />
+
+<img width="460" height="973" alt="Screenshot 2025-08-13 000528" src="https://github.com/user-attachments/assets/551f1dc6-2002-4d3e-87c0-411226e01281" />
+
 
 ### 👤 **User Interface**
-![Profile](https://via.placeholder.com/300x600/FF6B9D/FFFFFF?text=Profile+Screen)
-![Cart](https://via.placeholder.com/300x600/61DAFB/FFFFFF?text=Shopping+Cart)
+
+<img width="460" height="973" alt="Screenshot 2025-08-13 000449" src="https://github.com/user-attachments/assets/c6a68850-a03a-4c4a-9abb-8e4434d0790c" />
+
 
 *Screenshots coming soon - Beautiful UI with modern design patterns*
 
